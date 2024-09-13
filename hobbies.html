@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url('https://nomoreworkhorse.com/wp-content/uploads/2019/05/hero-1.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .gallery {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent background for better readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .gallery h1 {
+            font-family: 'Display', serif; /* Use the Display font for the title */
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 250px;
+            max-height: 250px;
+            opacity: 0; /* Hidden by default */
+            transition: opacity 0.5s;
+        }
+
+        .image-container div:hover img {
+            opacity: 1; /* Show image on hover */
+        }
+
+        #description {
+            font-family: sans-serif; 
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <h1>Hobbies</h1>
+        
+        <div class="image-container">
+            <div>
+                <p>Cover</p>
+                <img src="https://bad1569.github.io/templates/459101861_3133763410099590_8460163879968826900_n.jpg" alt="Photography">
+            </div>
+            <div>
+                <p>Guitarted</p>
+                <img src="https://bad1569.github.io/templates/459323862_823718146498415_184559701225335371_n.jpg" alt="Painting">
+            </div>
+        </div>
+
+        <p id="description">Hover over the hobbies to see related images!</p>
+    </div>
+</body>
+</html>
