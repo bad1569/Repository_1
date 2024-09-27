@@ -1,0 +1,61 @@
+.megadeth {background-image: url("https://images5.fanpop.com/image/photos/31400000/Rust-In-Peace-Wallpaper-megadeth-31435554-1680-1050.jpg");
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  
+  display: grid;
+  place-content: top-right;
+  text-align: top-right;
+  min-height: 500px;
+ 
+  
+  position: relative;
+  isolation: isolate;
+  }
+.megadeth::after{
+  content:'';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: black;
+  opacity: 0.4;
+}
+
+
+h1{font-size: 36px;
+  color: #D6BC32;
+
+ }
+button{
+  font-weight: Bold; 
+  font-size: 18px;
+  background: #020D45;
+}
+h2{font-size: 36px;
+  color: #D6BC32;
+  text-align: top-left;
+}
+h3{
+  font-size: 18px;
+  line-height: 1.5;
+  color:#D6BC32;
+  text-align: top-left;
+  place-content: top-left;
+  
+}
+h4{
+  font-size: 18px;
+  line-height: 1.5;
+  color:#D6BC32;
+  padding: 10px;
+   border-left: 6px solid red;;
+}
+ul{
+  font-size: 18px;
+  line-height: 1.5;
+  color:#D6BC32;
+}
+ul2{
+  text-decoration: none;
+  color:#ffffff;
+}

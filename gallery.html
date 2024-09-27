@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles gallery.css">
+</head>
+<body>
+    <div class="gallery">
+        <h1>Gallery</h1>
+        <div id="image-container">
+            <img id="displayed-image" src="" alt="">
+            <p id="image-description">Introduction to Cordillera</p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="showImage('https://www.slowfood.com/wp-content/uploads/2023/11/Banau-Rice-Terraces.jpg')">Scenery</button>
+        <button onclick="showImage('https://newsinfo.inquirer.net/files/2020/12/Regions108875.jpg')">Culture</button>
+        <button onclick="showImage('https://elretirobaguio.com/wp-content/uploads/2024/03/Kiniing-and-Etag-1024x809.jpg')">Cuisine</button>
+    </div>
+
+    <script>
+        function showImage(imageSrc) {
+            document.getElementById('displayed-image').src = imageSrc;
+        }
+    </script>
+</body>
+</html>
